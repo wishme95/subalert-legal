@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - SubAlert</title>
+  <style>
+    :root {
+      --bg: #0F0D15;
+      --surface: #181424;
+      --surface-border: #2E2744;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #CBB8FF;
+      --accent-strong: #7C5CE5;
+      --badge-bg: #1A2E26;
+      --badge-text: #34D399;
+      --badge-border: #22543D;
+      --link: #A78BFA;
+      --code-bg: #231E34;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F8FAFC;
+        --surface: #FFFFFF;
+        --surface-border: #E2E8F0;
+        --text-main: #0F172A;
+        --text-muted: #64748B;
+        --accent: #6D28D9;
+        --accent-strong: #5B21B6;
+        --badge-bg: #ECFDF5;
+        --badge-text: #059669;
+        --badge-border: #A7F3D0;
+        --link: #6D28D9;
+        --code-bg: #F1F5F9;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      border: 1px solid var(--badge-border);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .brand-badge .dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--badge-text);
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .card {
+      background-color: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+    }
+
+    .highlight-card {
+      background: linear-gradient(135deg, rgba(124, 92, 229, 0.08) 0%, rgba(52, 211, 153, 0.05) 100%);
+      border: 1px solid var(--accent);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin: 18px 0 8px 0;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    ul {
+      list-style-position: inside;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    code {
+      background-color: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      opacity: 0.85;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    th {
+      color: var(--text-main);
+      font-weight: 600;
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--surface-border);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand-badge">
+        <span class="dot"></span>
+        100% On-Device & Offline-First
+      </div>
+      <h1>Privacy Policy for SubAlert</h1>
+      <div class="meta">
+        <strong>Application:</strong> SubAlert<br>
+        <strong>Developer:</strong> iSwiftAppTechnolab<br>
+        <strong>Effective Date:</strong> November 17, 2026
+      </div>
+    </header>
+
+    <!-- At a Glance Summary -->
+    <div class="card highlight-card">
+      <h2>🛡️ Privacy at a Glance</h2>
+      <p>SubAlert is built with an <strong>offline-first, zero-account philosophy</strong>. We believe your personal subscriptions, recurring bills, and financial commitments are strictly your private business.</p>
+      <ul>
+        <li><strong>No Account Required:</strong> No registration, sign-up, email, password, or profile needed.</li>
+        <li><strong>No Bank Logins:</strong> We never request, access, or connect to your bank accounts, credit cards, or online financial portals.</li>
+        <li><strong>Local Storage Only:</strong> All subscription details, costs, renewal dates, and notes are stored solely in a local SQLite/Room database on your device.</li>
+        <li><strong>Zero Data Transmission:</strong> We do not operate remote user servers and never upload or sell your personal data.</li>
+      </ul>
+    </div>
+
+    <!-- 1. Information Collection & Storage -->
+    <div class="card">
+      <h2>1. Information You Provide & Where It Is Stored</h2>
+      <p>When you use SubAlert to manage subscriptions and free trials, you may enter:</p>
+      <ul>
+        <li>Subscription / service names (e.g., Netflix, Spotify, Gym)</li>
+        <li>Billing amounts, currencies, and billing cycle frequencies</li>
+        <li>First billing / renewal dates and trial expiry periods</li>
+        <li>Custom categories and reminder advance timing preferences</li>
+      </ul>
+      <p><strong>Storage Location:</strong> 100% of this information is saved locally on your physical device using Android's sandboxed Room/SQLite database. This data never leaves your device unless you explicitly choose to export an unencrypted backup file.</p>
+    </div>
+
+    <!-- 2. Backup & Restore -->
+    <div class="card">
+      <h2>2. Backup & Restore (Storage Access)</h2>
+      <p>SubAlert provides an optional manual <strong>Backup & Restore</strong> feature:</p>
+      <ul>
+        <li><strong>Export Backup:</strong> Exports your active subscription records into a standard <code>.json</code> file. You select the exact folder or cloud drive destination on your device via Android's secure Storage Access Framework (SAF).</li>
+        <li><strong>Restore Backup:</strong> Allows you to select and import a previously generated <code>.json</code> backup file into SubAlert.</li>
+      </ul>
+      <p>We have no background access to your external files or photos. You maintain full ownership and control of your backup files at all times.</p>
+    </div>
+
+    <!-- 3. Device Permissions -->
+    <div class="card">
+      <h2>3. Device Permissions & Why They Are Needed</h2>
+      <p>SubAlert requests only the minimal set of Android system permissions required to deliver on-device functionality:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Type</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>POST_NOTIFICATIONS</code></td>
+            <td>Runtime</td>
+            <td>Allows SubAlert to display renewal reminders and trial expiration notifications on Android 13+ devices.</td>
+          </tr>
+          <tr>
+            <td><code>SCHEDULE_EXACT_ALARM</code></td>
+            <td>Normal / Special</td>
+            <td>Enables Android's <code>AlarmManager</code> to wake the device at the exact scheduled minute to post your renewal notification before you get billed.</td>
+          </tr>
+          <tr>
+            <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+            <td>Normal</td>
+            <td>Reschedules your active local subscription alarms whenever your phone restarts so alerts are not lost.</td>
+          </tr>
+          <tr>
+            <td><code>VIBRATE</code></td>
+            <td>Normal</td>
+            <td>Provides gentle haptic confirmation when interacting with toggles and alerts.</td>
+          </tr>
+          <tr>
+            <td><code>INTERNET</code></td>
+            <td>Normal</td>
+            <td>Required strictly by third-party advertising SDKs (Google AdMob) to load banner ads. No user subscription data is transmitted over this connection.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 4. Third-Party Services & Advertising -->
+    <div class="card">
+      <h2>4. Third-Party Services & Advertising</h2>
+      <p>To help support the ongoing maintenance and development of SubAlert as a free utility, the app integrates <strong>Google AdMob</strong> (Google Mobile Ads SDK) to display banner advertisements.</p>
+      <p>Google AdMob may collect and process pseudonymous identifiers and device telemetry for ad serving, fraud prevention, and performance reporting. This may include:</p>
+      <ul>
+        <li>Google Advertising ID (GAID)</li>
+        <li>Device model, operating system version, and screen resolution</li>
+        <li>IP address (for coarse geographic location / country-level ad delivery)</li>
+        <li>Ad interaction metrics (impressions, clicks)</li>
+      </ul>
+      <p>For more details on how Google handles advertising data and how you can opt out of personalized ads:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a></li>
+        <li>You can reset or opt out of personalized advertising at any time in your device settings under <strong>Settings &rarr; Google &rarr; Ads</strong>.</li>
+      </ul>
+    </div>
+
+    <!-- 5. Children's Privacy -->
+    <div class="card">
+      <h2>5. Children's Privacy (COPPA / GDPR-K)</h2>
+      <p>SubAlert is a general-audience financial tracking utility and is not directed at children under the age of 13 (or under 16 in the European Economic Area / UK). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can take appropriate measures.</p>
+    </div>
+
+    <!-- 6. User Rights (GDPR & CCPA/CPRA Compliance) -->
+    <div class="card">
+      <h2>6. Your Data Rights (GDPR & CCPA/CPRA)</h2>
+      <p>Because all data resides strictly on your physical device, you have full and direct control over your information at all times:</p>
+      <ul>
+        <li><strong>Right to Access & Portability:</strong> You can export all your subscriptions at any time via <em>Settings &rarr; Export Backup (JSON)</em>.</li>
+        <li><strong>Right to Rectification:</strong> You can edit any subscription, price, or date directly inside the app.</li>
+        <li><strong>Right to Erasure (Deletion):</strong> You can delete individual subscriptions or wipe all app data completely by clearing app data in Android Settings or uninstalling the app.</li>
+      </ul>
+    </div>
+
+    <!-- 7. Security of Your Data -->
+    <div class="card">
+      <h2>7. Security</h2>
+      <p>We take the security of your data seriously. SubAlert leverages the built-in Android Application Sandbox, ensuring that other apps installed on your device cannot access SubAlert's local database. Because your financial commitments are never transmitted to any external cloud or server, they are safeguarded against remote server breaches or data leaks.</p>
+    </div>
+
+    <!-- 8. Changes to This Privacy Policy -->
+    <div class="card">
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable legal requirements. Any modifications will be posted to this page with an updated "Effective Date". We encourage you to review this page periodically.</p>
+    </div>
+
+    <!-- 9. Contact Us -->
+    <div class="card">
+      <h2>9. Contact Us</h2>
+      <p>If you have any questions, concerns, or feedback regarding this Privacy Policy or SubAlert's privacy practices, please contact us at:</p>
+      <p>
+        <strong>Developer:</strong> iSwiftAppTechnolab<br>
+        <strong>Email:</strong> <a href="mailto:iswiftapptechnolab@gmail.com">iswiftapptechnolab@gmail.com</a><br>
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2026 iSwift App Technolab. All rights reserved. SubAlert is an offline-first subscription utility.
+    </footer>
+  </div>
+
+</body>
+</html>
+
